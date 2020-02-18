@@ -3,7 +3,8 @@ cask 'digital-paper-app' do
   sha256 '3c2277ccd16057746433768b75fea39ca170ddf01b8cf89af04140700fddee64'
 
   url "https://www.sony.net/Products/DigitalPaperSystem/Software/DPA-Mac/DigitalPaperApp_#{version}.dmg"
-  #appcast ''
+  # Verified by capturing app check-for-update request with WireShark
+  appcast 'https://www.sony.net/dpt-rp1/check-for-update-mac' # Latest version code is included in the response
   name 'Digital Paper App'
   homepage 'https://www.sony.jp/digital-paper/apl/dpa.html'
 
