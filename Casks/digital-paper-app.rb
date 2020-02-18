@@ -17,5 +17,8 @@ cask 'digital-paper-app' do
                '~/Library/Application Support/Sony Corporation/Digital Paper App',
                '~/Library/Preferences/com.sony.digitalpaperapp.helper.plist',
                '~/Library/Preferences/com.sony.digitalpaperapp.plist',
+             ],
+      rmdir: [
+               '~/Library/Application Support/Sony Corporation', # Remove when it's empty
              ]
 end
